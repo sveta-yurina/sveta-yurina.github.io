@@ -1,0 +1,52 @@
+// *** variables ***
+$screen-xs-max: 575px;
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-person {
+    background-color: #425996;
+
+    position: relative;
+    height: 100vh;
+
+    &__person {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .person {
+        text-align: center;
+        color: #fff;
+        
+        &__name {
+            margin-bottom: 0.1em;
+
+            font-size: 5em;
+            line-height: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 3px -3px 9px rgba(0, 0, 0, .4);
+
+            span {
+                color: #19bd9b;
+            }
+        }
+
+        &__post {
+            font-size: 1.7em;
+            line-height: 1.2em;
+            font-weight: 300;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 0.8em;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.section-person {
+  background-color: #425996;
+  position: relative;
+  height: 100vh; }
+  .section-person__person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .section-person .person {
+    text-align: center;
+    color: #fff; }
+    .section-person .person__name {
+      margin-bottom: 0.1em;
+      font-size: 5em;
+      line-height: 1em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 3px -3px 9px rgba(0, 0, 0, 0.4); }
+      .section-person .person__name span {
+        color: #19bd9b; }
+    .section-person .person__post {
+      font-size: 1.7em;
+      line-height: 1.2em;
+      font-weight: 300; }
+    @media (max-width: 575px) {
+      .section-person .person {
+        font-size: 0.8em; } }
